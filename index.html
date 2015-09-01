@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=0.5">
+		<title>Counting</title>
+		<script type="text/javascript" src="js/libs/riot.js"></script>
+	
+
+	</head>
+	<body>
+		<counter></counter>
+		<script type="riot/tag" src="js/tags/counter.js"></script>
+		<script src="js/mixins/numeric.js"></script>
+		<script type="text/javascript">
+			riot.mount('*')
+			riot.mixin('numeric', numeric)
+		</script>
+	</body>
+</html>
